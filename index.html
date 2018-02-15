@@ -1,277 +1,111 @@
-<!DOCTYPE html>
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<!doctype html>
 <html lang="en">
-
-<head>
-    <title>Nawazish's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/overlay.css" type="text/css">
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> </head>
+    <meta name="generator" content="Polymer Starter Kit">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-<body>
-    <!--                   Navbar One                  -->
-    <nav class="nav navbar navbar-default animated fadeInDown navbar-one">
-        <div class="mycontainer">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle animated slideInRight" data-toggle="collapse" data-target="#myNavbar1"> <i class="fa fa-bars fa-2x"></i> </button>
-                <a class="navbar-brand animated slideInLeft" href="#cover">
-                    <h2>Nawazish Ali</h2>
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar1">
-                <ul class="navbar-right">
-                    <li><a class="animated slideInRight" href="#cover">Home</a></li>
-                    <li><a class="animated slideInRight" href="#services">Services</a></li>
-                    <li><a class="animated slideInRight" href="#works">Works</a></li>
-                    <li><a class="animated slideInRight" href="#skills">Skills</a></li>
-                    <li><a class="animated slideInRight" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--                   Navbar One ends                 -->
-    <!--                   Cover Start                     -->
-    <section id="cover" data-parallax="scroll" data-speed="0.5" data-image-src="images/header-bg.jpg">
-        <div class="cover-overlay"></div>
-        <div class="animated zoomIn">
-            <p>Hello, my name is Nawazish Ali and I am an</p>
-            <h1>ASPIRING FULL STACK WEB DEVELOPER</h1>
-            <p>currently learning to code at <a href="https://www.freecodecamp.com/nawazishali" target="_blank">FreeCodeCamp </a> and creating modern and responsive Web Applications</p>
-        </div> <a href="#services" id="down-arrow"><i class="fa fa-angle-down animated flash infinite"></i></a> </section>
-    <!--                   Cover end                   -->
-    <!--                   Navbar two                  -->
-    <nav class="nav navbar navbar-default animated fadeInDown navbar-two">
-        <div class="mycontainer">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle animated slideInRight" data-toggle="collapse" data-target="#myNavbar2"> <i class="fa fa-bars fa-2x"></i> </button>
-                <a class="navbar-brand animated slideInLeft" href="#cover">
-                    <h2>Nawazish Ali</h2>
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar2">
-                <ul class="navbar-right">
-                    <li><a id="cov" class="animated slideInRight" href="#cover">Home</a></li>
-                    <li><a id="ser" class="animated slideInRight" href="#services">Services</a></li>
-                    <li><a id="wor" class="animated slideInRight" href="#works">Works</a></li>
-                    <li><a id="ski" class="animated slideInRight" href="#skills">Skills</a></li>
-                    <li><a id="con" class="animated slideInRight" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--                   Navbar Two ends                    -->
-    <div class="">
-        <!--                   Services start                 -->
-        <section id="services">
-            <div class="mycontainer">
-                <h2 class="animated" data-animate="slideInUp">THIS IS WHAT I DO</h2>
-                <hr class="animated" data-animate="rubberBand">
-                <h3 class="animated" data-animate="slideInUp">Following are some of the major services I currently offer. More to follow soon as I continue to dig deeper in the world of Web development.</h3>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="services-card animated" data-animate="fadeInUp"> <img src="images/web-dev.png" alt="web-development" width="60">
-                            <h4>WEB DEVELOPMENT</h4>
-                            <h5>Get your own customised & fully interactive Websites or Portfolios hand coded by me as per the W3C standards. I work till perfection is achieved.</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="services-card animated" data-animate="fadeInUp"> <img src="images/responsive.png" alt="responsive" width="60">
-                            <h4>RESPONSIVE DESIGN</h4>
-                            <h5>Get your Websites converted to support all types of viewports and smaller devices, Or you may get a new responsive Website hand crafted by me.</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="services-card animated" data-animate="fadeInUp"> <img src="images/timely-delivery.png" alt="timely-delivery" width="60">
-                            <h4>TIMELY DELIVERY</h4>
-                            <h5>I truly believe that time is money and each second counts. So I'll make sure that you get your projects handed over to you within the agreed upon deadlines.</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="services-card animated" data-animate="fadeInUp"> <img src="images/psd-to-html.png" alt="psd-to-html" width="60">
-                            <h4>PSD TO HTML</h4>
-                            <h5>Get your Photoshop & Sketch Designs Templates converted to Pixel perfect websites using Tableless and responsive HTML5 & CSS3.</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--                   Services ends                 -->
-        <!--                   Works start                    -->
-        <section id="works">
-            <div class="mycontainer">
-                <h2 class="animated" data-animate="slideInUp">MY WORKS</h2>
-                <hr class="animated" data-animate="rubberBand">
-                <h3 class="animated" data-animate="slideInUp">Following are the projects I have worked on so far. Most of these projects were created while following the curriculum at <a href="https://www.freecodecamp.com/nawazishali" target="_blank">FreeCodeCamp.com</a></h3>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="grid">
-                            <figure class="effect-julia animated" data-animate="zoomIn"> <img src="images/Quaid_tribute.png" alt="quaid-tribute">
-                                <figcaption>
-                                    <h2>Tribute <span>Page</span></h2>
-                                    <p>This is a Tribute page for Quaid-e-Azam. Made using bootstrap.</p> <a href="https://s.codepen.io/nawazish/full/NNWOqJ" target="_blank">Take a look</a> </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="grid">
-                            <figure class="effect-julia animated" data-animate="zoomIn"> <img src="images/Portfolio_uikit.png" alt="portfolio-uikit">
-                                <figcaption>
-                                    <h2>Portfolio <span>Page</span></h2>
-                                    <p>This is a demo portfolio Page. Made using UIKit framework.</p> <a href="https://s.codepen.io/nawazish/full/oxMRjX" target="_blank">Take a look</a> </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="grid">
-                            <figure class="effect-julia animated" data-animate="zoomIn"> <img src="images/Random_quote_machine.png" alt="random-quote-machine">
-                                <figcaption>
-                                    <h2>Random <span>Quotes</span></h2>
-                                    <p>This is a Random Quote Machine. Made using Forismatic.com's API.</p> <a href="https://s.codepen.io/nawazish/full/EKOydK" target="_blank">Take a look</a> </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="grid">
-                            <figure class="effect-julia animated" data-animate="zoomIn"> <img src="images/local-weather-app.png" alt="local-weather-app">
-                                <figcaption>
-                                    <h2>Local <span>Weather</span></h2>
-                                    <p>This is a Local Weather App. Made using OpenWeatherMap's API.</p> <a href="http://s.codepen.io/nawazish/full/xVmvgE" target="_blank">Take a look</a> </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="grid">
-                            <figure class="effect-julia animated" data-animate="zoomIn"> <img src="images/Wikipedia-viewer.png" alt="coming-soon">
-                                <figcaption>
-                                    <h2>Wikipedia <span>Viewer</span></h2>
-                                    <p>This is a Wikipedia Viewer App. Made using Wikipedia's API.</p> <a href="https://s.codepen.io/nawazish/full/QKyYmp" target="_blank">Take a look</a> </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="grid">
-                            <figure class="effect-julia animated" data-animate="zoomIn"> <img src="images/Twitch-streamer.png" alt="coming-soon">
-                                <figcaption>
-                                    <h2>Twitch.TV <span>Streamers</span></h2>
-                                    <p>This is a Twitch.TV Streamers App. Made using Twitch.TV's API.</p> <a href="https://s.codepen.io/nawazish/full/ZpOkzw" target="_blank">Take a look</a> </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="grid">
-                            <figure class="effect-julia animated" data-animate="zoomIn"> <img src="images/Airblue-hrs-app.png" alt="coming-soon">
-                                <figcaption>
-                                    <h2>Airblue Hrs/Cyc <span>App</span></h2>
-                                    <p>This is a personal project made to tackle some office issues, Made using Node-Webkit for windows.</p> <a href="https://github.com/nawazishali/Airblue-Hrs-Cyc-Application" target="_blank">Github Repo</a> </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="grid">
-                            <figure class="effect-julia animated" data-animate="zoomIn"> <img src="images/Jasio-calculator.png" alt="coming-soon">
-                                <figcaption>
-                                    <h2>Jasio <span>Calculator</span></h2>
-                                    <p>This is a Javascript Calculator made using pure javascript, CSS3 & HTML5 without any library.</p> <a href="https://codepen.io/nawazish/full/KavKgX/" target="_blank">Take a look</a> </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="grid">
-                            <figure class="effect-julia animated" data-animate="zoomIn"> <img src="images/Coming_soon.png" alt="coming-soon">
-                                <figcaption>
-                                    <h2>Coming <span>soon</span></h2>
-                                    <p>More coming soon.</p> <a href="#">Take a look</a> </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--                   Works end                  -->
-        <!--                   Skills start                   -->
-        <section id="skills">
-            <div class="mycontainer">
-                <h2 class="animated" data-animate="slideInUp">MY SKILLS</h2>
-                <hr class="animated" data-animate="rubberBand">
-                <h3 class="animated" data-animate="slideInUp">Here are some of the Frontend development related hard skills I currently possess. Backend skills are coming soon.</h3>
-                <div class="row">
-                    <div class="col-sm-4 animated" data-animate="zoomIn"> <img src="images/html5.svg" alt="html5" width="100"> </div>
-                    <div class="col-sm-4 animated" data-animate="zoomIn"> <img src="images/css3.svg" alt="css3" width="100"> </div>
-                    <div class="col-sm-4 animated" data-animate="zoomIn"> <img src="images/boostrap.svg" alt="bootstrap" width="100"> </div>
-                    <div class="col-sm-4 animated" data-animate="zoomIn"> <img src="images/javascript.svg" alt="javascript" width="100"> </div>
-                    <div class="col-sm-4 animated" data-animate="zoomIn"> <img src="images/jquery.svg" alt="jquery" width="100"> </div>
-                    <div class="col-sm-4 animated" data-animate="zoomIn"> <img src="images/github.svg" alt="github" width="100"> </div>
-                </div>
-            </div>
-        </section>
-        <!--                   Skills end                 -->
-        <!--                   Hire-me starts                 -->
-        <section id="hire-me">
-            <div class="mycontainer">
-                <h3 class="animated" data-animate="slideInUp">ARE YOU READY TO START?</h3>
-                <h4 class="animated" data-animate="slideInUp">I'm available for freelance projects.</h4> <a href="#contact" class="btn btn-default animated" data-animate="slideInUp">Hire Me</a> </div>
-        </section>
-        <!--                   Hire-me ends                   -->
-        <!--                   Contacts start                 -->
-        <section id="contact">
-            <div class="mycontainer">
-                <h2 class="animated" data-animate="slideInUp">DROP ME A LINE</h2>
-                <hr class="animated" data-animate="rubberBand">
-                <h3 class="animated" data-animate="slideInUp">Want to get in touch with me? Be it to request more info about myself or my experience or to ask for my resume just feel free to drop me a line anytime. I will get back to you A.S.A.P.</h3>
-                <form method="POST" action="https://briskforms.com/go/aea1855efdabfac5d742b5406ea5368a" class="form-horizontal form">
-                    <input type="text" name="name" class="form-control animated" data-animate="slideInUp" placeholder="Your name">
-                    <input type="email" name="email" class="form-control animated" data-animate="slideInUp" placeholder="Your E-mail">
-                    <textarea name="message" rows="5" class="form-control animated" data-animate="slideInUp" placeholder="Message"></textarea>
-                    <button type="submit" name="submit" class="btn btn-default animated" data-animate="slideInUp">Send Message</button>
-                </form>
-            </div>
-        </section>
-        <!--                   Contacts end                   -->
-        <!--                   Footer start                   -->
-        <footer>
-            <ul>
-                <li class=" animated" data-animate="slideInUp"><a href="https://www.facebook.com/nawazsih.ali" target="_blank"><i class="fa fa-2x fa-facebook"></i></a></li>
-                <li class=" animated" data-animate="slideInUp"><a href="https://twitter.com/Nawazishaliejaz" target="_blank"><i class="fa fa-2x fa-twitter"></i></a></li>
-                <li class=" animated" data-animate="slideInUp"><a href="https://pk.linkedin.com/in/nawazish-ali-86b8222b" target="_blank"><i class="fa fa-2x fa-linkedin"></i></a></li>
-                <li class=" animated" data-animate="slideInUp"><a href="https://github.com/nawazishali" target="_blank"><i class="fa fa-2x fa-github"></i></a></li>
-                <li class=" animated" data-animate="slideInUp"><a href="https://codepen.io/nawazish/" target="_blank"><i class="fa fa-2x fa-codepen"></i></a></li>
-                <li class=" animated" data-animate="slideInUp"><a href="https://www.freecodecamp.com/nawazishali" target="_blank"><i class="fa fa-2x fa-free-code-camp"></i></a></li>
-            </ul>
-            <h4 class="animated" data-animate="slideInUp">Made with <i class="fa fa-heart fa-lg animated pulse infinite"></i> in Pakistan</h4>
-            <h4 class="animated" data-animate="slideInUp">© 2016 Nawazish Ali</h4>
-        </footer>
-        <!--                   Footer ends                    -->
-        <!--                   All scripts                 -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.4.2/parallax.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-        <script src="js/main.js"></script>
-        <script>
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <title>My App</title>
+    <meta name="description" content="My App description">
 
-            ga('create', 'UA-102929420-1', 'auto');
-            ga('send', 'pageview');
-        </script>
-    </div>
-</body>
+    <!--
+      The `<base>` tag below is present to support two advanced deployment options:
+      1) Differential serving. 2) Serving from a non-root path.
 
+      Instead of manually editing the `<base>` tag yourself, you should generally either:
+      a) Add a `basePath` property to the build configuration in your `polymer.json`.
+      b) Use the `--base-path` command-line option for `polymer build`.
+
+      Note: If you intend to serve from a non-root path, see [polymer-root-path] below.
+    -->
+    <base href="/">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- See https://goo.gl/qRE0vM -->
+    <meta name="theme-color" content="#3f51b5">
+
+    <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="My App">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="My App">
+
+    <!-- Homescreen icons -->
+    <link rel="apple-touch-icon" href="images/manifest/icon-48x48.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/manifest/icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="images/manifest/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/manifest/icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="images/manifest/icon-192x192.png">
+
+    <!-- Tile icon for Windows 8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/manifest/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#3f51b5">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <script>
+      /**
+      * [polymer-root-path]
+      *
+      * By default, we set `Polymer.rootPath` to the server root path (`/`).
+      * Leave this line unchanged if you intend to serve your app from the root
+      * path (e.g., with URLs like `my.domain/` and `my.domain/view1`).
+      *
+      * If you intend to serve your app from a non-root path (e.g., with URLs
+      * like `my.domain/my-app/` and `my.domain/my-app/view1`), edit this line
+      * to indicate the path from which you'll be serving, including leading
+      * and trailing slashes (e.g., `/my-app/`).
+      */
+      window.Polymer = {rootPath: '/'};
+
+      // Load and register pre-caching Service Worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js', {
+            scope: Polymer.rootPath,
+          });
+        });
+      }
+    </script>
+
+    <!-- Load webcomponents-loader.js to check and load any polyfills your browser needs -->
+    <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <!-- Load your application shell -->
+    <link rel="import" href="src/my-app.html">
+
+    <!-- Add any global styles for body, document, etc. -->
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Roboto', 'Noto', sans-serif;
+        line-height: 1.5;
+        min-height: 100vh;
+        background-color: #eeeeee;
+      }
+    </style>
+  </head>
+  <body>
+    <my-app></my-app>
+    <noscript>
+      Please enable JavaScript to view this website.
+    </noscript>
+    <!-- Built with love using Polymer Starter Kit -->
+  </body>
 </html>
-<!--Design Inspiration-->
-<!--http://scripteden.com/download/clean-one-page-personal-portfolio-template/-->
-<!--http://www.picseel.com/themes/planus/-->
