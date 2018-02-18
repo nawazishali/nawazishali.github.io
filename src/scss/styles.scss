@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 $body-font-color: white;
+$small-screen: 600px;
 
-body{
-  color: $body-font-color;
+body {
+    color: $body-font-color;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Raleway', sans-serif;
 }
 
 #hero {
     height: 100vh;
     width: 100%;
     #hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: absolute; // z-index: 1;
         height: 100%;
-        width: 100%;
-        text-align: center;
+        width: 100%; // text-align: center;
         background-color: #2F80ED;
         background-image: url("../images/cover-optimized.jpg");
         background-repeat: no-repeat;
@@ -22,6 +29,18 @@ body{
             margin-top: 50px;
             width: 200px;
             height: 200px;
+        }
+        @media screen and (max-width: $small-screen) {
+            img{
+              width: 150px;
+              height: 150px;
+            }
+            h4 {
+              font-size: 25px;
+            }
+            h2{
+              font-size: 35px;
+            }
         }
     }
     #particles {
@@ -39,6 +58,10 @@ body{
     text-decoration: none;
     color: white;
     z-index: 5;
+}
+
+.side-nav .background {
+  background-color: #2F80ED;
 }
 
 .sample {

@@ -1,8 +1,9 @@
 const $ = require('../../node_modules/jquery/dist/jquery');
 const hammer = require('../../node_modules/hammerjs');
 const materialize = require('../../node_modules/materialize-css/dist/js/materialize');
-// const particles = require('../../node_modules/particles.js/particles');
+const particles = require('../../node_modules/particles.js/particles');
 const particlesConfig = require('../configs/particles.json');
+// import particles from '../../node_modules/particles.js/particles';
 
 $(document).ready(function () {
   $(".nav-button").sideNav({
