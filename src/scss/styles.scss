@@ -1,0 +1,48 @@
+$body-font-color: white;
+
+body{
+  color: $body-font-color;
+}
+
+#hero {
+    height: 100vh;
+    width: 100%;
+    #hero-content {
+        position: absolute; // z-index: 1;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        background-color: #2F80ED;
+        background-image: url("../images/cover-optimized.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        box-sizing: content-box;
+        img {
+            margin-top: 50px;
+            width: 200px;
+            height: 200px;
+        }
+    }
+    #particles {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+}
+
+.nav-button {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    text-decoration: none;
+    color: white;
+    z-index: 5;
+}
+
+.sample {
+    width: 100%;
+    height: 600px;
+    background-color: aquamarine;
+}

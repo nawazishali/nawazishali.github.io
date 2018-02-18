@@ -7,7 +7,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $github_token
-  local_dir: build/default
+  local_dir: dist
   target-branch: master
   keep-history: true
   email: nawazishaliejaz@gmail.com

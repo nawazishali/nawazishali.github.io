@@ -1,0 +1,32 @@
+{
+  "name": "nawazishali.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html -d dist --public-url"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nawazishali/nawazishali.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nawazishali/nawazishali.github.io/issues"
+  },
+  "homepage": "https://github.com/nawazishali/nawazishali.github.io#readme",
+  "dependencies": {
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.3.1",
+    "materialize-css": "^0.100.2",
+    "parcel-bundler": "^1.6.1",
+    "particles.js": "^2.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
