@@ -2,7 +2,6 @@ language: node_js
 node_js:
   - "stable"
 script:
-  - bower install
   - npm run build
 deploy:
   provider: pages
@@ -14,4 +13,4 @@ deploy:
   email: nawazishaliejaz@gmail.com
   name: Nawazish Ali
   on:
-    branch: develop
+    branch: develop-simple
