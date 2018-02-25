@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-$body-font-color: white;
+$body-font-color: rgba(0,
+0,
+0,
+0.87);
 $small-screen: 600px;
-
+$white: white;
+$primary-blue: #2F80ED;
 body {
     color: $body-font-color;
     -webkit-font-smoothing: antialiased;
@@ -11,44 +15,50 @@ body {
 #hero {
     height: 100vh;
     width: 100%;
+    min-height: 500px;
     #hero-content {
+        top: 0px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        min-height: inherit; // background-color: transparent;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        position: absolute; // z-index: 1;
+        align-items: center; // position: absolute;
         height: 100%;
-        width: 100%; // text-align: center;
+        width: 100%;
+        color: white;
         background-color: #2F80ED;
         background-image: url("../images/cover-optimized.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
-        box-sizing: content-box;
         img {
             margin-top: 50px;
             width: 200px;
             height: 200px;
         }
+        canvas {
+            position: absolute;
+        }
         @media screen and (max-width: $small-screen) {
-            img{
-              width: 150px;
-              height: 150px;
+            img {
+                width: 150px;
+                height: 150px;
             }
             h4 {
-              font-size: 25px;
+                font-size: 25px;
             }
-            h2{
-              font-size: 35px;
+            h2 {
+                font-size: 35px;
             }
         }
     }
-    #particles {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: transparent;
-    }
+}
+
+.index-1 {
+    z-index: 1;
 }
 
 .nav-button {
@@ -61,11 +71,63 @@ body {
 }
 
 .side-nav .background {
-  background-color: #2F80ED;
+    background-color: #2F80ED;
 }
 
-.sample {
+.section-with-padding {
+    padding: 30px;
+}
+
+.bg-blue {
+    background-color: #2F80ED;
+}
+
+#about-me {
     width: 100%;
     height: 600px;
-    background-color: aquamarine;
+}
+
+.me {
+    width: 350px;
+    border-radius: 50%;
+}
+
+.size {
+    font-size: 1.2rem;
+}
+
+.row {
+    margin: 40px auto;
+}
+
+.quotation-mark {
+    margin: 0;
+    font-weight: bold;
+    font-size: 100px;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+.quote {
+    color: rgba(47, 129, 237, 0.664);
+}
+
+hr {
+    border: 0;
+    margin: 20px auto;
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, $white, $primary-blue, $white);
+    background-image: -moz-linear-gradient(left, $white, $primary-blue, $white);
+    background-image: -ms-linear-gradient(left, $white, $primary-blue, $white);
+    background-image: -o-linear-gradient(left, $white, $primary-blue, $white);
+}
+
+.underline-hr {
+    width: 450px;
+}
+
+.hr-white {
+    background-image: -webkit-linear-gradient(left, $primary-blue, $white, $primary-blue);
+    background-image: -moz-linear-gradient(left, $primary-blue, $white, $primary-blue);
+    background-image: -ms-linear-gradient(left, $primary-blue, $white, $primary-blue);
+    background-image: -o-linear-gradient(left, $primary-blue, $white, $primary-blue);
 }

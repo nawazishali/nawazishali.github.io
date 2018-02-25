@@ -46,6 +46,6 @@ $(document).ready(function () {
 
   /* ---- particles.js config ---- */
 
-  particlesJS("particles", particlesConfig);
+  particlesJS("hero-content", particlesConfig);
 
 });
