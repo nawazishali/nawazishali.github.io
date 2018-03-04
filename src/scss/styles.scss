@@ -42,6 +42,10 @@ body {
         canvas {
             position: absolute;
         }
+        h2 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
         @media screen and (max-width: $small-screen) {
             img {
                 width: 150px;
@@ -80,20 +84,29 @@ body {
 
 .bg-blue {
     background-color: #2F80ED;
+    color: $white;
 }
 
 #about-me {
     width: 100%;
-    height: 600px;
+      img {
+        width: 350px;
+        border-radius: 50%;
+          @media screen and (max-width: $small-screen) {
+            width: 90%;
+          }
+    }
+    p {
+        font-size: 1.2rem;
+    }
 }
 
-.me {
-    width: 350px;
-    border-radius: 50%;
-}
-
-.size {
-    font-size: 1.2rem;
+#skills {
+    i {
+        font-size: 70px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }
 
 .row {
@@ -105,10 +118,16 @@ body {
     font-weight: bold;
     font-size: 100px;
     font-family: "Times New Roman", Georgia, Serif;
+    @media screen and (max-width: $small-screen) {
+        font-size: 60px;
+    }
 }
 
 .quote {
     color: rgba(47, 129, 237, 0.664);
+    @media screen and (max-width: $small-screen) {
+        font-size: 35px;
+    }
 }
 
 hr {
@@ -123,6 +142,9 @@ hr {
 
 .underline-hr {
     width: 450px;
+    @media screen and (max-width: $small-screen) {
+        width: 100%;
+    }
 }
 
 .hr-white {
