@@ -14,6 +14,7 @@ $(document).ready(function () {
     });
   $('.parallax').parallax();
   // $('.carousel').carousel({ indicators: true, padding: 50, shift: 80 });
+  $('.carousel.carousel-slider').carousel({fullWidth: true});
   let setCopyRightYear = () => {
     var today = new Date();
     var year = today.getFullYear();
@@ -47,5 +48,7 @@ $(document).ready(function () {
   /* ---- particles.js config ---- */
 
   particlesJS("hero-content", particlesConfig);
+
+
 
 });
