@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 $body-font-color: rgba(0, 0, 0, 0.87);
+$mini-screen: 500px;
 $small-screen: 600px;
 $medium-screen: 992px;
 $white: white;
@@ -119,14 +120,6 @@ body {
     .container{
         width: 93%;
     }
-    .card {
-        padding: 20px;
-        .btn {
-            margin-top: 10px;
-            background-color: $white;
-            color: $primary-blue;
-        }
-    }
     @media screen and (max-width: $medium-screen) {
         .container{
             width: 90%;
@@ -160,12 +153,6 @@ body {
     }
 }
 
-.chip {
-    background-color: $primary-blue;
-    color: $white;
-    font-weight: 900;
-}
-
 .carousel .indicators .indicator-item {
     background-color: $secondary-blue;
 }
@@ -175,11 +162,45 @@ body {
 }
 .carousel.carousel-slider {
     height: 450px !important;
+    .card {
+        padding: 20px;
+        .btn {
+            margin-top: 10px;
+            background-color: $white;
+            color: $primary-blue;
+        }
+    }
+    .chip {
+        background-color: $primary-blue;
+        color: $white;
+        font-weight: 900;
+    }
+    h2, p {
+        margin: 10px auto;
+    }
     @media screen and (max-width: $medium-screen) {
         img{
             margin-top: 10px;
         }
-        height: 680px !important;
+        height: 610px !important;
+    }
+    @media screen and (max-width: $mini-screen) {
+        height: 550px !important;
+        .card {
+            padding: 5px;
+        }
+        h2 {
+            font-size: 20px !important;
+        }
+        p{
+            font-size: 12px !important;
+        }
+        .chip {
+            font-size: 10px;
+        }
+        .btn {
+            padding: 0 10px;
+        }
     }
 }
 
@@ -189,7 +210,9 @@ body {
 
 .prev-button {
     position: absolute;
-    left: 5px;
+    text-align: center;
+    width: 40px;
+    left: -10px;
     top: 40%;
     color: $primary-blue;
     z-index: 1;
@@ -200,7 +223,9 @@ body {
 
 .next-button {
     position: absolute;
-    right: 5px;
+    text-align: center;
+    width: 40px;
+    right: -10px;
     top: 40%;
     color: $primary-blue;
     z-index: 1;
