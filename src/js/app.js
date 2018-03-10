@@ -50,12 +50,14 @@ $(document).ready(function () {
 
   // Carousel config
 
-  $('.prev-button').click(() => {
+  $('#prev-button').on('touchstart', () => {
     $('.carousel').carousel('prev');
+    return false;
   });
 
-  $('.next-button').click(() => {
+  $('#next-button').on('touchstart', () => {
     $('.carousel').carousel('next');
+    return false;
   });
 
   changeSlide = (index, cl) => {

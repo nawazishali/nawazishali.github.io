@@ -206,9 +206,12 @@ body {
 
 .carousel.thumbnails {
     height: 220px !important;
+    @media screen and (max-width: $mini-screen) {
+        display: none;
+    }
 }
 
-.prev-button {
+#prev-button {
     position: absolute;
     text-align: center;
     width: 40px;
@@ -221,7 +224,7 @@ body {
     }
 }
 
-.next-button {
+#next-button {
     position: absolute;
     text-align: center;
     width: 40px;
