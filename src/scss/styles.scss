@@ -161,7 +161,7 @@ body {
     background-color: $primary-blue;
 }
 .carousel.carousel-slider {
-    height: 450px !important;
+    height: 480px !important;
     .card {
         padding: 20px;
         .btn {
@@ -182,7 +182,7 @@ body {
         img{
             margin-top: 10px;
         }
-        height: 610px !important;
+        height: 650px !important;
     }
     @media screen and (max-width: $mini-screen) {
         height: 550px !important;

@@ -50,12 +50,12 @@ $(document).ready(function () {
 
   // Carousel config
 
-  $('#prev-button').on('touchstart', () => {
+  $('#prev-button').on('touchstart click', () => {
     $('.carousel').carousel('prev');
     return false;
   });
 
-  $('#next-button').on('touchstart', () => {
+  $('#next-button').on('touchstart click', () => {
     $('.carousel').carousel('next');
     return false;
   });
