@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-$body-font-color: rgba(0,
-0,
-0,
-0.87);
+$body-font-color: rgba(0, 0, 0, 0.87);
 $small-screen: 600px;
+$medium-screen: 992px;
 $white: white;
 $primary-blue: #2F80ED;
+$secondary-blue:  rgba(47, 129, 237, 0.664);
+
 body {
     color: $body-font-color;
     -webkit-font-smoothing: antialiased;
@@ -29,7 +29,7 @@ body {
         height: 100%;
         width: 100%;
         color: white;
-        background-color: #2F80ED;
+        background-color: $primary-blue;
         background-image: url("../images/cover-optimized.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -75,7 +75,7 @@ body {
 }
 
 .side-nav .background {
-    background-color: #2F80ED;
+    background-color: $primary-blue;
 }
 
 .section-with-padding {
@@ -83,7 +83,7 @@ body {
 }
 
 .bg-blue {
-    background-color: #2F80ED;
+    background-color: $primary-blue;
     color: $white;
 }
 
@@ -97,26 +97,46 @@ body {
         }
     }
     p {
-        font-size: 1.2rem;
+        font-size: 15px;
     }
 }
 
 #skills {
+    width: 100%;
+    min-height: 100%;
     i {
         font-size: 70px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 
 #projects {
     .container{
-        width: 90%;
+        width: 93%;
+    }
+    .card {
+        padding: 20px;
+        .btn {
+            margin-top: 10px;
+            background-color: $white;
+            color: $primary-blue;
+        }
+    }
+    @media screen and (max-width: $medium-screen) {
+        .container{
+            width: 90%;
+        }
+    }
+    @media screen and (max-width: $small-screen) {
+        .container{
+            width: 85%;
+        }
     }
 }
 
 .row {
-    margin: 40px auto;
+    margin: 30px auto;
 }
 
 .quotation-mark {
@@ -130,9 +150,58 @@ body {
 }
 
 .quote {
-    color: rgba(47, 129, 237, 0.664);
+    color: $secondary-blue;
     @media screen and (max-width: $small-screen) {
         font-size: 35px;
+    }
+}
+
+.chip {
+    background-color: $primary-blue;
+    color: $white;
+    font-weight: 900;
+}
+
+.carousel .indicators .indicator-item {
+    background-color: $secondary-blue;
+}
+
+.carousel .indicators .indicator-item.active {
+    background-color: $primary-blue;
+}
+.carousel.carousel-slider {
+    height: 450px !important;
+    @media screen and (max-width: $medium-screen) {
+        img{
+            margin-top: 10px;
+        }
+        height: 680px !important;
+    }
+}
+
+.carousel.thumbnails {
+    height: 220px !important;
+}
+
+.prev-button {
+    position: absolute;
+    left: 5px;
+    top: 40%;
+    color: $primary-blue;
+    z-index: 1;
+    @media screen and (max-width: $small-screen) {
+        font-size: 10px;
+    }
+}
+
+.next-button {
+    position: absolute;
+    right: 5px;
+    top: 40%;
+    color: $primary-blue;
+    z-index: 1;
+    @media screen and (max-width: $small-screen) {
+        font-size: 10px;
     }
 }
 

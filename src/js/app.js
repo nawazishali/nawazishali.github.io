@@ -13,8 +13,7 @@ $(document).ready(function () {
     draggable: true, // Choose whether you can drag to open on touch screens,
     });
   $('.parallax').parallax();
-  // $('.carousel').carousel({ indicators: true, padding: 50, shift: 80 });
-  $('.carousel.carousel-slider').carousel({fullWidth: true});
+  
   let setCopyRightYear = () => {
     var today = new Date();
     var year = today.getFullYear();
@@ -48,6 +47,35 @@ $(document).ready(function () {
   /* ---- particles.js config ---- */
 
   particlesJS("hero-content", particlesConfig);
+
+  // Carousel config
+
+  $('.prev-button').click(() => {
+    $('.carousel').carousel('prev');
+  });
+
+  $('.next-button').click(() => {
+    $('.carousel').carousel('next');
+  });
+
+  changeSlide = (index, cl) => {
+    cl = (typeof cl == undefined) ? '.carousel.carousel-slide' : cl;
+    $(cl).carousel('set', index);
+  }
+
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    onCycleTo: (data) => {
+      changeSlide($(data).data('cindex'), '.carousel.thumbnails');
+    }
+  });
+  $('.carousel.thumbnails').carousel({
+    dist: 0,
+    padding: 3,
+    onCycleTo: (data) => {
+      changeSlide($(data).data('cindex'), '.carousel.carousel-slider');
+    }
+  });
 
 
 
