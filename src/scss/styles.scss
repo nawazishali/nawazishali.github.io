@@ -74,6 +74,10 @@ body {
     z-index: 5;
 }
 
+.nav-button.btn-floating {
+    background-color: $primary-blue;
+}
+
 .side-nav .background {
     background-color: $primary-blue;
 }

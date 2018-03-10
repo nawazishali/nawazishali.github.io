@@ -77,6 +77,14 @@ $(document).ready(function () {
     }
   });
 
+  $(window).scroll(() => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > 200) {
+      $('.nav-button').addClass('btn-floating');
+    } else {
+      $('.nav-button').removeClass('btn-floating');
+    }
+  });
 
 
 });
