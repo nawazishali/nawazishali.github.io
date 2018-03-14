@@ -5,7 +5,8 @@ $small-screen: 600px;
 $medium-screen: 992px;
 $white: white;
 $primary-blue: #2F80ED;
-$secondary-blue:  rgba(47, 129, 237, 0.664);
+$primary-blue-opaque:  rgba(47, 129, 237, 0.664);
+$secondary-blue: #2566BD;
 
 body {
     color: $body-font-color;
@@ -147,14 +148,14 @@ body {
 }
 
 .quote {
-    color: $secondary-blue;
+    color: $primary-blue-opaque;
     @media screen and (max-width: $small-screen) {
         font-size: 35px;
     }
 }
 
 .carousel .indicators .indicator-item {
-    background-color: $secondary-blue;
+    background-color: $primary-blue-opaque;
 }
 
 .carousel .indicators .indicator-item.active {
@@ -163,15 +164,21 @@ body {
 .carousel.carousel-slider {
     height: 480px !important;
     .card {
+        background-color: $primary-blue;
+        color: $white;
         padding: 20px;
         .btn {
-            margin-top: 10px;
+            margin: 10px;
+            font-size: 14px;
             background-color: $white;
             color: $primary-blue;
+            i{
+                font-size: inherit;
+            }
         }
     }
     .chip {
-        background-color: $primary-blue;
+        background-color: $secondary-blue;
         color: $white;
         font-weight: 900;
     }
