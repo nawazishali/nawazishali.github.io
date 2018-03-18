@@ -42,7 +42,7 @@ $(document).ready(function () {
     } // End if
   });
 
-  // setCopyRightYear();
+  setCopyRightYear();
 
   /* ---- particles.js config ---- */
 
