@@ -198,12 +198,17 @@ body {
 }
 
 .side-menu-social-links {
+    margin: 5px;
+    .col{
+        padding: 0 5px;
+    }
     a {
-        margin-top: 10px;
         display: inline-flex;
-        width: 60px;
-        height: 60px;
+        padding: 0;
+        width: 40px;
+        height: 40px;
         color: $primary-blue;
+        font-size: 20px;
         justify-content: center;
         align-items: center;
         border-radius: 4px;
@@ -301,6 +306,10 @@ body {
     color: $primary-blue;
     i {
         font-size: inherit;
+    }
+    &:hover, &:focus {
+        background-color: $secondary-blue;
+        color: white;
     }
 }
 
