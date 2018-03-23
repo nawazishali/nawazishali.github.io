@@ -1,9 +1,12 @@
+
 const $ = require('../../node_modules/jquery/dist/jquery');
 const hammer = require('../../node_modules/hammerjs');
 const materialize = require('../../node_modules/materialize-css/dist/js/materialize');
 const particles = require('../../node_modules/particles.js/particles');
 const particlesConfig = require('../configs/particles.json');
-// import particles from '../../node_modules/particles.js/particles';
+const projectsJson = require('../configs/projects').default;
+const skillsJson = require('../configs/skills').default;
+const Vue = require('../../node_modules/vue/dist/vue');
 
 $(document).ready(function () {
   $(".nav-button").sideNav({
@@ -13,7 +16,21 @@ $(document).ready(function () {
     draggable: true, // Choose whether you can drag to open on touch screens,
     });
   $('.parallax').parallax();
+
+  let skillss = new Vue({
+    el: '#skills',
+    data: {
+      skills: skillsJson
+    }
+  })
   
+  let projects = new Vue({
+    el: '#projects',
+    data: {
+      projects: projectsJson
+    }
+  })
+
   let setCopyRightYear = () => {
     var today = new Date();
     var year = today.getFullYear();
@@ -87,6 +104,7 @@ $(document).ready(function () {
       $('.nav-button').removeClass('btn-floating');
     }
   });
+
 
 
 });
