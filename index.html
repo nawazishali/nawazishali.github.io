@@ -164,15 +164,14 @@
             <div>
               <div v-for="item in project.builtWith" class="chip">{{item}}</div>
             </div>
-            <a :href="project.links[0]" class="btn btn-white waves-effect waves-light" rel="noopener" target="_blank">View Live
+            <a :href="project.links[0]" class="btn btn-white waves-effect waves-light" target="_blank">View Live
               <i class="fa fa-external-link"></i>
             </a>
-            <a :href="project.links[1]" class="btn btn-white waves-effect waves-light" rel="noopener" target="_blank">Github
+            <a :href="project.links[1]" class="btn btn-white waves-effect waves-light" target="_blank">Github
               <i class="fa fa-github"></i>
             </a>
           </div>
           <div class="col l7 m8 s12 offset-m2">
-            
             <img :src="project.imageUrl" class="responsive-img">
           </div>
         </div>
