@@ -138,30 +138,7 @@
     <h5>These are skills and tools I use to make the Web a better place.</h5>
     <div class="row">
       <div v-for="skill in skills" class="col l2 m3 s4" v-html="skill"></div>
-      <!-- <i class="col l2 m3 s4 devicon-html5-plain-wordmark colored"></i>
-      <i class="col l2 m3 s4 devicon-css3-plain-wordmark"></i>
-      <i class="col l2 m3 s4 devicon-javascript-plain colored"></i>
-      <i class="col l2 m3 s4 devicon-sass-original colored"></i>
-      <i class="col l2 m3 s4 devicon-nodejs-plain colored"></i>
-      <i class="col l2 m3 s4 devicon-nodewebkit-plain colored"></i>
-      <i class="col l2 m3 s4 devicon-express-original colored"></i>
-      <i class="col l2 m3 s4 devicon-mongodb-plain-wordmark colored"></i>
-      <i class="col l2 m3 s4 devicon-typescript-plain"></i>
-      <i class="col l2 m3 s4 devicon-vuejs-plain-wordmark colored"></i>
-      <i class="col l2 m3 s4 devicon-angularjs-plain colored"></i>
-      <i class="col l2 m3 s4 devicon-bootstrap-plain colored"></i>
-      <i class="col l2 m3 s4 devicon-git-plain colored"></i>
-      <i class="col l2 m3 s4 devicon-jasmine-plain-wordmark colored"></i>
-      <i class="col l2 m3 s4 devicon-jquery-plain-wordmark colored"></i>
-      <i class="col l2 m3 s4 devicon-protractor-plain colored"></i>
-      <i class="col l2 m3 s4 devicon-travis-plain colored"></i>
-      <i class="col l2 m3 s4 devicon-webpack-plain"></i>
-      <i class="col l2 m3 s4 devicon-visualstudio-plain colored"></i>
-      <i class="col l2 m3 s4 devicon-slack-plain colored"></i>
-      <i class="col l2 m3 s4 devicon-photoshop-plain colored"></i>
-      <i class="col l2 m3 s4 devicon-github-plain"></i>
-      <i class="col l2 m3 s4 devicon-gitlab-plain colored"></i>
-      <i class="col l2 m3 s4 devicon-bitbucket-plain colored"></i> -->
+      <!-- <i class="col l2 m3 s4 devicon-html5-plain-wordmark colored"></i>-->
     </div>
   </section>
 
@@ -188,15 +165,14 @@
             <div>
               <div v-for="item in project.builtWith" class="chip">{{item}}</div>
             </div>
-            <a :href="project.links[0]" class="btn btn-white waves-effect waves-light" rel="noopener" target="_blank">View Live
+            <a :href="project.links[0]" class="btn btn-white waves-effect waves-light" target="_blank">View Live
               <i class="fa fa-external-link"></i>
             </a>
-            <a :href="project.links[1]" class="btn btn-white waves-effect waves-light" rel="noopener" target="_blank">Github
+            <a :href="project.links[1]" class="btn btn-white waves-effect waves-light" target="_blank">Github
               <i class="fa fa-github"></i>
             </a>
           </div>
           <div class="col l7 m8 s12 offset-m2">
-            <!-- <img src="https://cdn.dribbble.com/users/180057/screenshots/2256895/comingsoon.jpg" class="responsive-img" width="600"> -->
             <img :src="project.imageUrl" class="responsive-img">
           </div>
         </div>

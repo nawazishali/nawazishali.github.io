@@ -55,5 +55,39 @@ export default [
       "https://nawazishali.github.io/portfolio-version-two",
       "https://github.com/nawazishali/portfolio-version-two"
     ]
+  },
+  {
+    "name": "Jasio Calculator",
+    "description": "A Javascript calculator that also works with keyboard numpad keys. I made this while learning to code at freeCodeCamp.org",
+    "imageUrl": projectImages['jasio-calculator.jpg'],
+    "builtWith": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "JQuery",
+      "FlexBox",
+    ],
+    "links": [
+      "https://nawazishali.github.io/jasio-calculator",
+      "https://github.com/nawazishali/jasio-calculator"
+    ]
+  },
+  {
+    "name": "Random Quote Machine",
+    "description": "A quote machine that helps to find random quotes related to science and tech, Tweeting is just a click a way. Made while learning to code at freeCodeCamp.org",
+    "imageUrl": projectImages['quote-machine.jpg'],
+    "builtWith": [
+      "HTMl5",
+      "CSS3",
+      "Javascript",
+      "JQuery",
+      "Bootstrap",
+      "Ajax",
+      "API"
+    ],
+    "links": [
+      "https://nawazishali.github.io/random-quote-machine/",
+      "https://github.com/nawazishali/random-quote-machine"
+    ]
   }
 ]
