@@ -22,9 +22,10 @@
   "dependencies": {
     "hammerjs": "^2.0.8",
     "jquery": "^3.3.1",
-    "materialize-css": "^0.100.2",
+    "materialize-css": "^0.99.0",
     "parcel-bundler": "^1.6.1",
     "particles.js": "^2.0.0",
+    "pickadate": "^3.5.6",
     "vue": "^2.5.16"
   },
   "devDependencies": {

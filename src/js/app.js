@@ -8,6 +8,11 @@ const projectsJson = require('../configs/projects').default;
 const skillsJson = require('../configs/skills').default;
 const Vue = require('../../node_modules/vue/dist/vue');
 
+// Commented this line in materialize.js 
+// var $ = window.jQuery,
+// and pointed picker.js require statement to the right Path.
+// also used v0.99.0 to resolve the carosel links not working issue.
+
 $(document).ready(function () {
   $(".nav-button").sideNav({
     menuWidth: 300, // Default is 300
@@ -17,7 +22,7 @@ $(document).ready(function () {
     });
   $('.parallax').parallax();
 
-  let skillss = new Vue({
+  let skills = new Vue({
     el: '#skills',
     data: {
       skills: skillsJson
