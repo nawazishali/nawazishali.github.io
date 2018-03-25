@@ -1,7 +1,7 @@
 
 const $ = require('../../node_modules/jquery/dist/jquery');
 const hammer = require('../../node_modules/hammerjs');
-const materialize = require('../../node_modules/materialize-css/dist/js/materialize');
+const materialize = require('../js/materialize');
 const particles = require('../../node_modules/particles.js/particles');
 const particlesConfig = require('../configs/particles.json');
 const projectsJson = require('../configs/projects').default;
