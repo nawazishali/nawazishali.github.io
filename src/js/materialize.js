@@ -7577,7 +7577,7 @@ Picker.extend( 'pickadate', DatePicker )
  */
 
 ;(function(){
-	// var $ = window.jQuery,
+	var $ = window.jQuery,
 			$win = $(window),
 			$doc = $(document);
 
