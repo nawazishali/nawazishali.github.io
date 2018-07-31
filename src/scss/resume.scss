@@ -16,9 +16,8 @@
         margin: 150px auto 0 auto !important;
     }
     #footer {
-        h4 {
-            margin: 0;
-            margin-top: 7px;
+        .card-panel {
+            height: 320px !important;
         }
     }
 }
@@ -219,11 +218,15 @@ hr {
     bottom: 0px;
     .card-panel {
         position: absolute;
-        height: 200px;
+        // height: 200px;
+        height: 290px;
         width: 86%;
         top: -80px;
         left: 7%;
         padding: 0;
+        hr {
+            margin-bottom: 0;
+        }
         .interests {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -233,5 +236,29 @@ hr {
                 margin: 0;
             }
         }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+            p {
+                margin: 0;
+            }
+        }
     }
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+.pd-10 {
+    padding: 10px;
 }
