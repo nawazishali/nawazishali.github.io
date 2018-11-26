@@ -38,6 +38,42 @@ export default [
     ]
   },
   {
+    "name": "BackTable",
+    "description": "A Hybrid Mobile app that is an in-depth knowledge base for all things interventional radiology; covering tools, techniques, and expert guidance on more than 30 IR procedures. Built with Ionic 3 + Angular",
+    "imageUrl": projectImages['backtable.jpg'],
+    "builtWith": [
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Javascript",
+      "Angular",
+      "Ionic 3",
+      "MongoDB",
+      "Express.js",
+      "Loopback.js"
+    ],
+    "links": [
+      "https://backtable.com"
+    ]
+  },
+  {
+    "name": "UTM.io",
+    "description": "UTM.io is the best way to build, share and sync your UTMs with your team. Stop using messy spreadsheets and get good campaign data in your analytics. Built with Angular 5 beyond.",
+    "imageUrl": projectImages['utmio.jpg'],
+    "builtWith": [
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Javascript",
+      "Angular",
+      "MongoDB",
+      "Express.js"
+    ],
+    "links": [
+      "https://utm.io"
+    ]
+  },
+  {
     "name": "Portfolio V2",
     "description": "This is the second version of my portfolio created over an year ago to help me create a better impression of potential employers.",
     "imageUrl": projectImages['portfolio-v2.jpg'],
