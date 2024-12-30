@@ -2,16 +2,17 @@ language: node_js
 node_js:
   - "stable"
 script:
-  - bower install
   - npm run build
 deploy:
+  edge:
+    branch: v1.8.47
   provider: pages
   skip_cleanup: true
   github_token: $github_token
-  local_dir: build/default
+  local_dir: build
   target-branch: master
   keep-history: true
   email: nawazishaliejaz@gmail.com
   name: Nawazish Ali
   on:
-    branch: develop
+    branch: develop-simple
