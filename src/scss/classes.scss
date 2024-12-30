@@ -1,0 +1,43 @@
+.index-1 {
+    z-index: 1;
+}
+
+.section-with-padding {
+    padding: 30px;
+}
+
+.bg-blue {
+    background-color: $primary-blue;
+    color: $white;
+}
+
+.row {
+    margin: 30px auto;
+}
+
+.btn-white {
+    background-color: $white;
+    color: $primary-blue;
+    i {
+        font-size: inherit;
+    }
+    &:hover,
+    &:focus {
+        background-color: $secondary-blue;
+        color: white;
+    }
+}
+
+.underline-hr {
+    width: 450px;
+    @media screen and (max-width: $small-screen) {
+        width: 100%;
+    }
+}
+
+.hr-white {
+    background-image: -webkit-linear-gradient(left, $primary-blue, $white, $primary-blue);
+    background-image: -moz-linear-gradient(left, $primary-blue, $white, $primary-blue);
+    background-image: -ms-linear-gradient(left, $primary-blue, $white, $primary-blue);
+    background-image: -o-linear-gradient(left, $primary-blue, $white, $primary-blue);
+}

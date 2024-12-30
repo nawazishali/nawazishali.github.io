@@ -1,0 +1,28 @@
+#about-me {
+    width: 100%;
+    img {
+        width: 350px;
+        border-radius: 50%;
+        @media screen and (max-width: $small-screen) {
+            width: 90%;
+        }
+    }
+    p {
+        font-size: 15px;
+    }
+    .quotation-mark {
+        margin: 0;
+        font-weight: bold;
+        font-size: 100px;
+        font-family: "Times New Roman", Georgia, Serif;
+        @media screen and (max-width: $small-screen) {
+            font-size: 60px;
+        }
+    }
+    .quote {
+        color: $primary-blue-opaque;
+        @media screen and (max-width: $small-screen) {
+            font-size: 35px;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+{
+  minifySvg: false,
+  collapseWhitespace: false,
+  removeRedundantAttributes: false
+}
