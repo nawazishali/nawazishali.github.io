@@ -1,0 +1,29 @@
+:root {
+  // --font-style: 'Lato', sans-serif;
+  --p-icon-size: 1.5em;
+}
+
+html {
+  font-size: 14px;
+  // font-family: var(--font-style);
+  @apply antialiased;
+  scroll-behavior: smooth;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
+.dark-mode {
+  background-color: var(--p-surface-950)
+}
+
+// .bg-primary-gradient {
+//   @apply bg-gradient-to-r from-primary-500 from-30% to-white to-30%;
+// }
