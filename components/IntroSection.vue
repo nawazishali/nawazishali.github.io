@@ -50,7 +50,7 @@
             severity="primary"
             label="Download Resume"
             as="a"
-            href="/assets/documents/Nawazish Ali CV - Dec 2024.pdf"
+            href="/documents/Nawazish Ali CV - Dec 2024.pdf"
             download
           />
           <PrimeButton
@@ -69,7 +69,7 @@
     <div class="flex justify-start">
       <img
         class="rounded-full w-64 aspect-square"
-        src="/assets/images/profile-picture4.jpg"
+        src="/images/profile-picture.jpg"
         alt="profile-picture"
       />
     </div>
