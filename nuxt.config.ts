@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     cssPath: '@/assets/scss/tailwind.scss',
     configPath: '@/tailwind.config.ts',
   },
-  css: ['@/assets/scss/base.scss'],
+  css: ['@/assets/scss/base.scss', 'primeicons/primeicons.css'],
   primevue: {
     components: {
       prefix: 'Prime',

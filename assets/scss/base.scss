@@ -1,13 +1,14 @@
 :root {
-  // --font-style: 'Lato', sans-serif;
+  --font-style: 'Satoshi', sans-serif;;
   --p-icon-size: 1.5em;
 }
 
 html {
   font-size: 14px;
-  // font-family: var(--font-style);
-  @apply antialiased;
+  font-family: var(--font-style);
+  @apply antialiased font-medium;
   scroll-behavior: smooth;
+  color: var(--p-surface-700)
 }
 
 .page-enter-active,
@@ -21,9 +22,6 @@ html {
 }
 
 .dark-mode {
-  background-color: var(--p-surface-950)
+  background-color: var(--p-surface-950);
+  color: var(--p-surface-200);
 }
-
-// .bg-primary-gradient {
-//   @apply bg-gradient-to-r from-primary-500 from-30% to-white to-30%;
-// }
