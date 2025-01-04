@@ -10,6 +10,7 @@ declare module 'vue' {
     PrimeButton: typeof import('primevue/button')['default']
     PrimeCard: typeof import('primevue/card')['default']
     PrimeChip: typeof import('primevue/chip')['default']
+    PrimeDivider: typeof import('primevue/divider')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

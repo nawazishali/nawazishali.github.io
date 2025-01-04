@@ -40,9 +40,9 @@
               :href="project.link"
               target="_blank"
               rel="noopener"
-              v-tooltip="'See it live'"
+              v-tooltip.left="'See it live'"
             >
-              <i class="pi pi-link text-primary-500 text-4xl"></i>
+              <i class="pi pi-link text-surface-400 hover:text-primary-500 text-6xl"></i>
             </a>
           </div>
         </template>

@@ -7,7 +7,7 @@
       <h2 class="text-surface-700 dark:text-surface-200 text-2xl font-bold mb-8">
         Lead Frontend Developer (Javascript | Vue | Nuxt)
       </h2>
-      <div class="text-xl font-medium grid gap-2 text-wrap mb-8">
+      <!-- <div class="text-xl font-medium grid gap-2 text-wrap mb-8">
         Highly skilled Senior Frontend Developer with 8+ years of experience in
         crafting and maintaining robust web applications across diverse
         industries (Cloud Security, Restaurant, Airline, Medical, HR). Proven
@@ -17,13 +17,28 @@
         applications. Passionate about developer growth, actively contributing
         to the tech community through leading a freeCodeCamp study group and
         organizing meetups.
-      </div>
+      </div> -->
+
+      <p class="text-xl font-medium grid gap-2 text-wrap mb-4">
+        Highly skilled Senior Frontend Developer with 8+ years of experience in
+        crafting and maintaining robust web applications across diverse
+        industries (Cloud Security, Restaurant, Airline, Medical, HR). Proven
+        ability to adapt to dynamic environments, including successful remote
+        work experiences in Canada and Germany.
+      </p>
+      <p class="text-xl font-medium grid gap-2 text-wrap mb-8">
+        Led a team in a critical project for Costco, successfully refactoring 
+        and modernizing multiple applications. Passionate about developer growth, 
+        actively contributing to the tech community through leading a freeCodeCamp 
+        study group and organizing meetups.
+      </p>
+      
       <div class="flex flex-row flex-wrap gap-6 items-center justify-start">
         <a
           href="mailto:nawazishaliejaz@gmail.com"
           target="_blank"
           rel="noopener"
-          class="flex items-center justify-center"
+          class="flex items-center justify-center hover:text-primary-500"
         >
           <i class="pi pi-envelope"></i>
         </a>
@@ -31,7 +46,7 @@
           href="https://github.com/nawazishali"
           target="_blank"
           rel="noopener"
-          class="flex items-center justify-center"
+          class="flex items-center justify-center hover:text-primary-500"
         >
           <i class="pi pi-github"></i>
         </a>
@@ -39,9 +54,17 @@
           href="https://linkedin.com/in/nawazishaliejaz"
           target="_blank"
           rel="noopener"
-          class="flex items-center justify-center"
+          class="flex items-center justify-center hover:text-primary-500"
         >
           <i class="pi pi-linkedin"></i>
+        </a>
+        <a
+          href="https://twitter.com/Nawazishaliejaz"
+          target="_blank"
+          rel="noopener"
+          class="flex items-center justify-center hover:text-primary-500"
+        >
+          <i class="pi pi-twitter"></i>
         </a>
         <div class="flex flex-wrap gap-4">
           <PrimeButton

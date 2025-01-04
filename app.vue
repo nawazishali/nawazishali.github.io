@@ -6,11 +6,15 @@
       rel="stylesheet"
     />
   </Head>
-  <div class="container max-w-screen-lg px-6">
+  <div class="container max-w-screen-lg px-6 relative pt-24">
     <ColorModeToggle />
     <IntroSection />
     <ProjectsSection />
+    <OpenSourceSection />
+    <Footer/>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+</script>

@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
+  app: {
+    baseURL: '/', // baseURL: '/<repository>/' https://<username>.github.io/<repository>/
+  },
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   typescript: {
