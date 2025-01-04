@@ -1,4 +1,4 @@
-export type GithubPinnedRepose = {
+export type GithubPinnedRepos = {
   author: string;
   name: string;
   description: string;
@@ -8,14 +8,17 @@ export type GithubPinnedRepose = {
 }[];
 
 export const useGithubPinnedRepos = () => {
-  let pinnedRepos: Ref<GithubPinnedRepose> = ref([]);
+  let pinnedRepos: Ref<GithubPinnedRepos> = ref([]);
 
   let getGithubPinnedRepos = async (username: string) => {
-    let response = await $fetch<GithubPinnedRepose>(`https://pinned.berrysauce.dev/get/${username}`, {
-      method: "GET",
-    });
-    pinnedRepos.value = response
+    let response = await $fetch<GithubPinnedRepos>(
+      `https://pinned.berrysauce.dev/get/${username}`,
+      {
+        method: "GET",
+      }
+    );
+    pinnedRepos.value = response;
   };
 
-  return {pinnedRepos, getGithubPinnedRepos}
+  return { pinnedRepos, getGithubPinnedRepos };
 };

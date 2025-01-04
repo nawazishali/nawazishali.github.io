@@ -7,7 +7,11 @@
       Here are some of my Open Source contributions and projects I am working on for the community.
     </h2>
 
-    <div class="grid md:grid-cols-2 gap-6">
+    <div v-if="!pinnedRepos.length" class="flex justify-center">
+      <PrimeProgressSpinner class="w-40 h-40" />
+    </div>
+
+    <div v-else class="grid md:grid-cols-2 gap-6">
       <PrimeCard
         class="border border-primary-500 shadow-none"
         v-for="repo in pinnedRepos"
@@ -15,7 +19,7 @@
       >
         <template #content>
           <div class="flex flex-row-reverse justify-between lg:justify-normal items-center lg:flex-row gap-4 mb-4">
-            <i class="pi pi-github text-6xl"></i>
+            <i class="pi pi-github text-6xl text-surface-400"></i>
             <div>
               <h2 class="text-xl font-bold text-primary-500">
                 {{ repo.name }}
@@ -25,11 +29,7 @@
               </p>
             </div>
           </div>
-          <!-- <div class="flex gap-2 mb-4 flex-wrap">
-            <PrimeChip :label="skill" v-for="skill in repo.builtWith" />
-          </div> -->
           <!-- <div class="flex gap-4 items-center justify-between">
-            <p class="font-bold">{{repo.invlovement}} • {{repo.Job}}</p>
             <a
               :href="repo.link"
               target="_blank"
