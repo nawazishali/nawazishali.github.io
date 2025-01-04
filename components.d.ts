@@ -11,6 +11,7 @@ declare module 'vue' {
     PrimeCard: typeof import('primevue/card')['default']
     PrimeChip: typeof import('primevue/chip')['default']
     PrimeDivider: typeof import('primevue/divider')['default']
+    PrimeProgressSpinner: typeof import('primevue/progressspinner')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
