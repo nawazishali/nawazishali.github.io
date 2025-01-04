@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
+  app: {
+    baseURL: '/', // baseURL: '/<repository>/' https://<username>.github.io/<repository>/
+  },
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   typescript: {
@@ -15,7 +18,7 @@ export default defineNuxtConfig({
     cssPath: '@/assets/scss/tailwind.scss',
     configPath: '@/tailwind.config.ts',
   },
-  css: ['@/assets/scss/base.scss'],
+  css: ['@/assets/scss/base.scss', 'primeicons/primeicons.css'],
   primevue: {
     components: {
       prefix: 'Prime',
