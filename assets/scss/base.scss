@@ -8,7 +8,8 @@ html {
   font-family: var(--font-style);
   @apply antialiased font-medium;
   scroll-behavior: smooth;
-  color: var(--p-surface-700)
+  color: var(--p-surface-700);
+  background-color: var(--p-surface-50);
 }
 
 .page-enter-active,
