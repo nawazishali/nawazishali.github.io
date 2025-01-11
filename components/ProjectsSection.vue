@@ -9,7 +9,7 @@
 
     <div class="grid md:grid-cols-2 gap-6">
       <PrimeCard
-        class="border border-primary-500 shadow-none"
+        class="border border-surface-200 dark:border-surface-800 shadow-none"
         v-for="project in projects"
         :key="project.name"
       >
