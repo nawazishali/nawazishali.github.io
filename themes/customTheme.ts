@@ -377,5 +377,5 @@ export default <PrimeVueConfiguration["theme"]>{
       name: "primevue",
       order: "tailwind-base, primevue, tailwind-utilities",
     },
-  },
+  }
 };
