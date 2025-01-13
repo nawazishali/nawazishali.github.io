@@ -9,7 +9,7 @@
 
     <div class="grid md:grid-cols-2 gap-6">
       <PrimeCard
-        class="border border-surface-200 dark:border-surface-800 shadow-none"
+        class=""
         v-for="project in projects"
         :key="project.name"
       >
@@ -53,4 +53,5 @@
 
 <script setup lang="ts">
 const { projects } = useProjects();
+const abcd = "text-red-500"
 </script>

@@ -23,6 +23,7 @@ export default defineNuxtConfig({
     components: {
       prefix: 'Prime',
     },
-    importTheme: { from: '@/themes/customTheme.ts' }
+    importTheme: { as: 'customTheme', from: '@/themes/customTheme.ts' },
+    importPT: { as: 'passThrough', from: '@/themes/passThrough.ts' },
   },
 });
