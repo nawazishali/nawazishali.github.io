@@ -1,0 +1,18 @@
+{
+  "editor.quickSuggestions": {
+    "strings": "on",
+    "comments": "on"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    "'(.*?)'",
+    "`(.*?)`",
+    "\"(.*?)\"",
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "typescript",
+    "typescript": "typescript"
+  }
+}
