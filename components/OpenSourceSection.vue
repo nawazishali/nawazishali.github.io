@@ -13,7 +13,6 @@
 
     <div v-else class="grid md:grid-cols-2 gap-6">
       <PrimeCard
-        class="border border-surface-200 dark:border-surface-800 shadow-none"
         v-for="repo in pinnedRepos"
         :key="repo.name"
       >
