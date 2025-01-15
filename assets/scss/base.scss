@@ -1,6 +1,7 @@
 :root {
-  --font-style: 'Satoshi', sans-serif;;
+  --font-style: "Satoshi", sans-serif;
   --p-icon-size: 1.5em;
+  --gradient-animation-speed: 10s;
 }
 
 html {
@@ -8,21 +9,46 @@ html {
   font-family: var(--font-style);
   @apply antialiased font-medium;
   scroll-behavior: smooth;
-  color: var(--p-surface-700);
-  background-color: var(--p-surface-50);
 }
 
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
-}
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
+.light-mode {
+  color: var(--p-surface-700);
+  // background-color: var(--p-surface-50);
+  background: radial-gradient(
+    var(--p-surface-100),
+    var(--p-surface-50),
+    var(--p-primary-200),
+  );
+  background-size: 150% 150%;
+  background-position: 70% 70%;
+  animation: gradient var(--gradient-animation-speed) ease infinite;
 }
 
 .dark-mode {
-  background-color: var(--p-surface-950);
+  // background-color: var(--p-surface-950);
+  background: radial-gradient(
+    var(--p-surface-900),
+    var(--p-surface-950),
+    var(--p-primary-950)
+  );
   color: var(--p-surface-200);
+  background-size: 150% 150%;
+  background-position: 80% 80%;
+  animation: gradient var(--gradient-animation-speed) ease infinite;
 }
+
+@keyframes gradient {
+  25% {
+    background-position: 30% 70%;
+  }
+  50% {
+    background-position: 30% 30%;
+  }
+  75% {
+    background-position: 70% 30%;
+  }
+  100% {
+    background-position: 70% 70%;
+  }
+}
+
