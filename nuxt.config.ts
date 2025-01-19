@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     "@primevue/nuxt-module",
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
+    '@nuxt/content',
   ],
   tailwindcss: {
     cssPath: '@/assets/scss/tailwind.scss',
