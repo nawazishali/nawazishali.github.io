@@ -9,6 +9,7 @@ html {
   font-family: var(--font-style);
   @apply antialiased font-medium;
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 
 .light-mode {
@@ -21,6 +22,7 @@ html {
   );
   background-size: 150% 150%;
   background-position: 70% 70%;
+  background-repeat: no-repeat;
   animation: gradient var(--gradient-animation-speed) ease infinite;
 }
 
@@ -34,6 +36,7 @@ html {
   color: var(--p-surface-200);
   background-size: 150% 150%;
   background-position: 80% 80%;
+  background-repeat: no-repeat;
   animation: gradient var(--gradient-animation-speed) ease infinite;
 }
 

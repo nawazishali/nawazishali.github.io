@@ -1,0 +1,143 @@
+[
+  {
+    "name": "metru.io",
+    "description": "A platform that aims to innovate and improve the remote hiring culture using time shifted video interviews, Video Resumes and AI analysis for better professional match.",
+    "invlovement": "Full-Time",
+    "Job": "Development",
+    "imageUrl": "/images/projects/logos/metru-logo.png",
+    "builtWith": [
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Javascript",
+      "Typescript",
+      "TailwindCSS",
+      "Vue.js",
+      "Nuxt.js",
+      "Pinia"
+    ],
+    "link": "https://utm.io"
+  },
+  {
+    "name": "utm.io",
+    "description": "utm.io The best way to build, share and sync UTM link with your team. Stop using messy spreadsheets and get good analytics.",
+    "invlovement": "Full-Time",
+    "Job": "Development",
+    "imageUrl": "/images/projects/logos/utmio.jpg",
+    "builtWith": [
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Javascript",
+      "Angular",
+      "MongoDB",
+      "Express.js"
+    ],
+    "link": "https://utm.io"
+  },
+  {
+    "name": "Eyemed",
+    "description": "Eyemed Member Web is your hub for all things vision. See your benefit breakdown, savings snapshot, cost estimator, and a detailed eye doctor search.",
+    "invlovement": "Part-Time",
+    "Job": "Development",
+    "imageUrl": "/images/projects/logos/eyemed.svg",
+    "builtWith": [
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Javascript",
+      "Vue.js",
+      "Node.js",
+      "Typescript"
+    ],
+    "link": "https://www.eyemed.com/en-us/member"
+  },
+  {
+    "name": "Cloudnosys",
+    "description": "This cloud security platform provides comprehensive protection with features like risk prioritization, compliance automation, and integrated threat detection and response.",
+    "invlovement": "Full-Time",
+    "Job": "Development",
+    "imageUrl": "/images/projects/logos/cloudnosys.jpg",
+    "builtWith": [
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Javascript",
+      "React.js",
+      "Redux",
+      "Express.js",
+      "AWS"
+    ],
+    "link": "https://cloudnosys.com/"
+  },
+  {
+    "name": "procheck.io",
+    "description": "A platform that aims to streamline and improve manufacturing processes by leveraging Internet of Things (IoT) to gather real-time data from various sources across the factory floor.",
+    "invlovement": "Full-Time",
+    "Job": "Development",
+    "imageUrl": "/images/projects/logos/procheck.jpg",
+    "builtWith": [
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Javascript",
+      "React.js",
+      "Redux",
+      "Express.js"
+    ],
+    "link": "https://procheck.io"
+  },
+  {
+    "name": "owner.app",
+    "description": "Experience the most efficient way to manage your real estate with OWNER from managing tenants to automatically billing and collecting rent..",
+    "invlovement": "Full-Time",
+    "Job": "Development",
+    "imageUrl": "/images/projects/logos/owner.svg",
+    "builtWith": [
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Javascript",
+      "Angular",
+      "MongoDB",
+      "Express.js"
+    ],
+    "link": "https://owner.app/en"
+  },
+  {
+    "name": "BackTable",
+    "description": "An in-depth knowledge base for all things interventional radiology; covering tools, techniques, and expert guidance on more than 30 IR procedures.",
+    "invlovement": "Full-Time",
+    "Job": "Development",
+    "imageUrl": "/images/projects/logos/backtable.jpg",
+    "builtWith": [
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Javascript",
+      "Angular",
+      "Ionic 3",
+      "MongoDB",
+      "Express.js",
+      "Loopback.js"
+    ],
+    "link": "https://backtable.com"
+  },
+  {
+    "name": "freeCodeCampKarachi",
+    "description": "A Landing Page for freeCodeCampKarachi built by me to help the group have better online presence.",
+    "invlovement": "Part-Time",
+    "Job": "Development",
+    "imageUrl": "/images/projects/logos/fcckarachi.png",
+    "builtWith": [
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Javascript",
+      "JQuery",
+      "Materialize.css",
+      "Parcel.js"
+    ],
+    "link": "https://fcckarachi.github.io"
+  }
+]
