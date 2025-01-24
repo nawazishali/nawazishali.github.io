@@ -14,7 +14,13 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxt/content',
+    '@nuxthq/studio',
   ],
+  content: {
+    preview: {
+      api: 'https://api.nuxt.studio'
+    }
+  },
   tailwindcss: {
     cssPath: '@/assets/scss/tailwind.scss',
     configPath: '@/tailwind.config.ts',
