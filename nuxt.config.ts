@@ -14,11 +14,12 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxt/content',
-    '@nuxthq/studio',
   ],
   content: {
     preview: {
-      api: 'https://api.nuxt.studio'
+      api: 'https://api.nuxt.studio',
+      // force module initialization on dev env
+      dev: true
     }
   },
   tailwindcss: {
