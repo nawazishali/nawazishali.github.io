@@ -1,0 +1,17 @@
+{
+  "name": "owner.app",
+  "description": "Experience the most efficient way to manage your real estate with OWNER from managing tenants to automatically billing and collecting rent..",
+  "invlovement": "Full-Time",
+  "Job": "Development",
+  "imageUrl": "/images/projects/logos/owner.svg",
+  "builtWith": [
+    "HTML5",
+    "CSS3",
+    "SCSS",
+    "Javascript",
+    "Angular",
+    "MongoDB",
+    "Express.js"
+  ],
+  "link": "https://owner.app/en"
+}

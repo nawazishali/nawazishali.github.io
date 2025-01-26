@@ -1,0 +1,17 @@
+{
+  "name": "Eyemed",
+  "description": "Eyemed Member Web is your hub for all things vision. See your benefit breakdown, savings snapshot, cost estimator, and a detailed eye doctor search.",
+  "invlovement": "Part-Time",
+  "Job": "Development",
+  "imageUrl": "/images/projects/logos/eyemed.svg",
+  "builtWith": [
+    "HTML5",
+    "CSS3",
+    "SCSS",
+    "Javascript",
+    "Vue.js",
+    "Node.js",
+    "Typescript"
+  ],
+  "link": "https://www.eyemed.com/en-us/member"
+}

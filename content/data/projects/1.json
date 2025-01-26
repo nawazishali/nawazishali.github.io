@@ -1,0 +1,19 @@
+{
+  "name": "metru.io",
+  "description": "A platform that aims to innovate and improve the remote hiring culture using time shifted video interviews, Video Resumes and AI analysis for better professional match.",
+  "invlovement": "Full-Time",
+  "Job": "Development",
+  "imageUrl": "/images/projects/logos/metru-logo.png",
+  "builtWith": [
+    "HTML5",
+    "CSS3",
+    "SCSS",
+    "Javascript",
+    "Typescript",
+    "TailwindCSS",
+    "Vue.js",
+    "Nuxt.js",
+    "Pinia"
+  ],
+  "link": "https://utm.io"
+}

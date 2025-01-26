@@ -1,0 +1,17 @@
+{
+  "name": "utm.io",
+  "description": "utm.io The best way to build, share and sync UTM link with your team. Stop using messy spreadsheets and get good analytics.",
+  "invlovement": "Full-Time",
+  "Job": "Development",
+  "imageUrl": "/images/projects/logos/utmio.jpg",
+  "builtWith": [
+    "HTML5",
+    "CSS3",
+    "SCSS",
+    "Javascript",
+    "Angular",
+    "MongoDB",
+    "Express.js"
+  ],
+  "link": "https://utm.io"
+}
