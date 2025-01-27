@@ -1,0 +1,18 @@
+{
+  "name": "Cloudnosys",
+  "description": "This cloud security platform provides comprehensive protection with features like risk prioritization, compliance automation, and integrated threat detection and response.",
+  "invlovement": "Full-Time",
+  "Job": "Development",
+  "imageUrl": "/images/projects/logos/cloudnosys.jpg",
+  "builtWith": [
+    "HTML5",
+    "CSS3",
+    "SCSS",
+    "Javascript",
+    "React.js",
+    "Redux",
+    "Express.js",
+    "AWS"
+  ],
+  "link": "https://cloudnosys.com/"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "procheck.io",
+  "description": "A platform that aims to streamline and improve manufacturing processes by leveraging Internet of Things (IoT) to gather real-time data from various sources across the factory floor.",
+  "invlovement": "Full-Time",
+  "Job": "Development",
+  "imageUrl": "/images/projects/logos/procheck.jpg",
+  "builtWith": [
+    "HTML5",
+    "CSS3",
+    "SCSS",
+    "Javascript",
+    "React.js",
+    "Redux",
+    "Express.js"
+  ],
+  "link": "https://procheck.io"
+}

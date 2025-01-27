@@ -1,0 +1,19 @@
+{
+  "name": "BackTable",
+  "description": "An in-depth knowledge base for all things interventional radiology; covering tools, techniques, and expert guidance on more than 30 IR procedures.",
+  "invlovement": "Full-Time",
+  "Job": "Development",
+  "imageUrl": "/images/projects/logos/backtable.jpg",
+  "builtWith": [
+    "HTML5",
+    "CSS3",
+    "SCSS",
+    "Javascript",
+    "Angular",
+    "Ionic 3",
+    "MongoDB",
+    "Express.js",
+    "Loopback.js"
+  ],
+  "link": "https://backtable.com"
+}

@@ -8,7 +8,7 @@ export default defineContentConfig({
     }),
     projects: defineCollection({
       type: 'data',
-      source: 'data/projects.json',
+      source: 'data/projects/**.json',
       schema: z.object({
         name: z.string(),
         description: z.string(),
