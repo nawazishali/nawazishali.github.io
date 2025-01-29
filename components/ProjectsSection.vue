@@ -8,10 +8,7 @@
     </h2>
 
     <div class="grid md:grid-cols-2 gap-6">
-      <PrimeCard
-        v-for="project in projects"
-        :key="project.name"
-      >
+      <PrimeCard v-for="project in projects" :key="project.name">
         <template #content>
           <div class="flex flex-row-reverse lg:flex-row gap-4 mb-4">
             <img
@@ -34,14 +31,18 @@
             <PrimeChip :label="skill" v-for="skill in project.builtWith" />
           </div>
           <div class="flex gap-4 items-center justify-between">
-            <p class="font-bold">{{project.invlovement}} • {{project.Job}}</p>
+            <p class="font-bold">
+              {{ project.invlovement }} • {{ project.Job }}
+            </p>
             <a
               :href="project.link"
               target="_blank"
               rel="noopener"
               v-tooltip.left="'See it live'"
             >
-              <i class="pi pi-link text-surface-400 hover:text-primary-500 text-6xl"></i>
+              <i
+                class="pi pi-link text-surface-400 hover:text-primary-500 text-6xl"
+              ></i>
             </a>
           </div>
         </template>
@@ -51,5 +52,11 @@
 </template>
 
 <script setup lang="ts">
-const { projects } = useProjects();
+import type { ProjectsCollectionItem } from "@nuxt/content";
+
+let projects = ref<ProjectsCollectionItem[]>([]);
+let getProjects = async () => {
+  projects.value = await queryCollection("projects").all();
+};
+getProjects();
 </script>

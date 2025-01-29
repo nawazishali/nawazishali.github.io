@@ -4,17 +4,8 @@
     <IntroSection />
     <ProjectsSection />
     <OpenSourceSection />
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
-<script setup lang="ts">
-
-let getProjects = async() => {
-  let data = await queryCollection('projects').all()
-  console.log(data)
-}
-getProjects()
-
-
-</script>
+<script setup lang="ts"></script>
