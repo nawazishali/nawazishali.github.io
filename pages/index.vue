@@ -1,6 +1,6 @@
 <template>
-  <div class="container max-w-screen-lg px-6 relative pt-24">
-    <ColorModeToggle />
+  <div class="container max-w-screen-lg px-6 relative">
+    <Navbar/>
     <IntroSection />
     <ProjectsSection />
     <OpenSourceSection />
