@@ -15,7 +15,7 @@ export default defineContentConfig({
         invlovement: z.string(),
         Job: z.string(),
         imageUrl: z.string(),
-        builtWith: z.string(),
+        builtWith: z.array(z.string()),
         link: z.string(),
       })
     })
